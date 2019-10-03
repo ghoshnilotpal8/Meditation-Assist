@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:padding="10dp">
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Counter"
+            android:textSize="30sp"/>
+        <EditText
+            android:layout_margin="15dp"
+            android:id="@+id/numberOfTimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the number of repetation time"
+            android:layout_gravity="center"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_margin="20dp"
+        android:layout_below="@+id/linearlayout1"
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_play_button_black_24dp"/>
+
+
+
+        <Button
+            android:id="@+id/recodButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/play"
+            android:text="Record"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:id="@+id/recordTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="00:00"
+            android:layout_below="@+id/recodButton"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Stop"
+            android:layout_below="@+id/recordTimer"
+            android:layout_margin="30dp"/>
+
+    <Button
+        android:id="@+id/stopPlaying"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ff0000"
+        android:text="STOP"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"/>
+
+
+</RelativeLayout>
